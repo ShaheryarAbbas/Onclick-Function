@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onclick Event</title>
+</head>
+<body>
+    <button type="submit" onclick="sq()" >Square</button>
+    <button type="submit" onclick="math()">Addition</button>
+
+    <label for="">Name</label>
+    <input type="text" id="name">
+    <button type="submit" onclick="val()">value</button>
+    <div id="demo"></div>
+
+    <label for="">Email</label>
+    <input type="text" id="email">
+    <button type="submit" onclick="mail()">assign</button>
+    <div id="demo"></div>
+
+        <label for="">percentage</label>
+    <input type="text" id="percentage">
+    <button type="submit" onclick="percentage()">value</button>
+    <div id="demo2"></div>
+    <script>
+        function
+        
+        sq(){
+            var n=10
+            document.write(n*n);
+        }
+        function math(){
+            var a=10;
+            var b=10;
+            document.write(a+b)
+        }
+        function
+        val(){
+            var n=document.getElementById("name").value;
+            document.getElementById("demo").innerHTML= n;
+            document.getElementById("name").value="";
+        }
+        function
+        mail(){
+            var n=document.getElementById("email").value;
+            document.getElementById("demo").innerHTML= n;
+            document.getElementById("email").value="";
+        }
+        
+            function
+            percentage(){
+                var a = document.getElementById("percentage").value;
+                var b = (a/700)*100;
+                var a=document.getElementById("percentage").value;
+                document.getElementById("demo2").innerHTML= b;
+                document.getElementById("percentage").value="";
+            }
+        
+        
+
+    </script>
+</body>
+</html>
